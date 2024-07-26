@@ -16,6 +16,7 @@
   --snd-bg-color: #262b49;
   --text-color: #fff;
   --main-color: #59b2f4;
+  --picturetext-color: #090336;
 }
 
 html {
@@ -70,6 +71,24 @@ section {
   font-size: 3.6rem;
   color: var(--text-color);
   display: none;
+}
+
+/* Scroll section CSS starts from here */
+.scroll {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background: url("../img/background.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.scrolltext h2 {
+  color: var(--picturetext-color);
+  font-size: 8em;
+  font-weight: 800;
 }
 
 /* Home section CSS starts from here */
