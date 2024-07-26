@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --res-bg-color: #c4f2f1;
+  --bg-color: #191f36;
+  --snd-bg-color: #262b49;
+  --text-color: #fff;
+  --main-color: #59b2f4;
+  --primary-color: #03a9f4;
+  --secondary-color: #333;
+  --picturetext-color: #090336;
+  --sec-text-color: #000;
+  --percent-bg-color: #62686c;
+}
+
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header CSS Part starts from here*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 700;
+  cursor: default;
+}
+
+/* Resume section CSS here */
+.header-resume h2 {
+  color: var(--main-color);
+  font-size: 2.5em;
+  font-weight: 700;
+  text-shadow: 10px, 10px, 10px, var(--text-color);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: var(--res-bg-color);
+  margin: 110px 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 35px rgba(0, 0, 0, 0.1);
+}
+
+.container .left {
+  position: relative;
+  background: var(--picturetext-color);
+  padding: 40px;
+}
+
+.profile-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.profile-text .imgBox {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-text .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-text h2 {
+  color: var(--text-color);
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.profile-text h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.contact-info {
+  padding-top: 40px;
+}
+
+.title {
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  position: relative;
+}
+
+.contact-info ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contact-info ul li .fa-solid,
+.contact-info ul li .fa-brands {
+  color: var(--primary-color);
+  font-weight: 300;
+}
+
+.contact-info ul li span {
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+.contact-info.education li {
+  margin-bottom: 15px;
+}
+
+.contact-info.education h5 {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.contact-info.education h4:nth-child(2) {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.contact-info.education h4 {
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+.contact-info.language .text {
+  color: var(--text-color);
+}
+
+.contact-info.language .percent {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: var(--percent-bg-color);
+  display: block;
+  margin-top: 5px;
+}
+
+.contact-info.language .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--primary-color);
+}
+
+.container .right {
+  position: relative;
+  background: var(--text-color);
+  padding: 40px;
+  color: var(--sec-text-color);
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about:last-child {
+  margin-bottom: 0;
+}
+
+.title2 {
+  color: var(--picturetext-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--secondary-color);
+}
+
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.about .box .year_company {
+  min-width: 150px;
+}
+
+.about .box .year_company h5 {
+  text-transform: uppercase;
+  color: #8849c2;
+  font-weight: 600;
+}
+
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+
+.skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .box h4 {
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  background: var(--percent-bg-color);
+}
+
+.skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--primary-color);
+}
+
+.interest ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.interest ul li {
+  list-style: none;
+  color: var(--secondary-color);
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.interest ul li .fa-solid {
+  color: var(--primary-color);
+  font-size: 18px;
+  width: 20px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .header-resume h2 {
+    font-size: 1.5rem;
+  }
+
+  .about .box {
+    flex-direction: column;
+  }
+
+  .about .box .year_company {
+    margin-bottom: 5px;
+  }
+
+  .skills .box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .interest ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
