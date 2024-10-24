@@ -188,6 +188,9 @@ span {
 .about-img img {
   width: 35vw;
 }
+.about-img1 img {
+  width: 25vw;
+}
 
 .heading {
   text-align: center;
@@ -206,6 +209,11 @@ span {
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+}
+
+.about-content ul li {
+  font-size: 1.6rem;
+  margin: 2rem 0;
 }
 
 /* Services section CSS starts from here */
