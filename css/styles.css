@@ -86,7 +86,7 @@ section {
   background-attachment: fixed;
 }
 .scrolltext h2 {
-  color: var(--picturetext-color);
+  color: var(--text-color);
   font-size: 8em;
   font-weight: 800;
 }
