@@ -112,12 +112,13 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 100px;
+  /* left: 100px; */
   height: 10vh;
   background: url("../img/background.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-clip: content-box;
 }
 .scrolltext h2 {
   color: var(--text-color);
