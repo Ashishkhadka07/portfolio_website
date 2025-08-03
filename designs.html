@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish's Designs</title>
+
+    <!-- Linking external css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/designs.css">
+    <link rel="stylesheet" type="text/css" href="css/cv.css">
+</head>
+
+<body>
+    <!-- HEADER DESIGN SECTION DESIGN -->
+    <header class="header">
+        <a href="./index.html" target="_parent" class="logo">Portfolio</a>
+        <div class="header-resume">
+            <h2> Designs </h2>
+        </div>
+    </header>
+    
+    <section class="designs-section" id="designs">
+        <div class="designs-header">
+            <h4 class="subtitle">GALLERY</h4>
+            <h2 class="title">Explore My Designs</h2>
+            <p class="description">Snapshots from my UI/UX, web, and branding works.</p>
+        </div>
+
+        <div class="designs-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="uiux">UI/UX</button>
+            <button class="filter-btn" data-filter="branding">Branding</button>
+        </div>
+
+        <div class="designs-gallery">
+            <div class="design-card" data-category="web"><img src="img/design1.jpg" alt="Web Design 1" /></div>
+            <div class="design-card" data-category="uiux"><img src="img/design2.jpg" alt="UI/UX 1" /></div>
+            <div class="design-card" data-category="branding"><img src="img/design3.jpg" alt="Branding 1" /></div>
+            <div class="design-card" data-category="web"><img src="img/design4.jpg" alt="Web Design 2" /></div>
+            <div class="design-card" data-category="branding"><img src="img/design5.jpg" alt="Branding 2" /></div>
+            <div class="design-card" data-category="uiux"><img src="img/design6.jpg" alt="UI/UX 2" /></div>
+        </div>
+
+        <div class="loading-text">LOADING...</div>
+    </section>
+</body>
+<script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const designCards = document.querySelectorAll('.design-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active from all
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const filterValue = button.getAttribute('data-filter');
+
+            designCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filterValue === 'all' || category === filterValue) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+
+
+</html>

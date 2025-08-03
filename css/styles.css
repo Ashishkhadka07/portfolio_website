@@ -158,7 +158,7 @@ section {
   background-clip: content-box;
 }
 .scrolltext h2 {
-  color: var(--text-color);
+  color: #222;
   font-size: 8em;
   font-weight: 800;
 }
@@ -394,6 +394,18 @@ span {
 .portfolio-layer a i {
   font-size: 2rem;
   color: var(--snd-bg-color);
+}
+
+/* Designs Section starts from here */
+.my-designs {
+  padding: 40px 20px 20px 40px;
+  background-color: var(--snd-bg-color);
+  text-align: center;
+}
+
+.designs-content {
+  font-size: 1.6rem;
+  margin: 1rem 2rem;
 }
 
 /* Contact section CSS starts from here */
