@@ -58,3 +58,14 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true,
 })
+
+/*------------------ Back to Top JS ---------------------*/
+const backToTop = document.querySelector('.footer-iconTop');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        backToTop.style.display = 'flex';
+    } else {
+        backToTop.style.display = 'none';
+    }
+});

@@ -232,13 +232,24 @@
 
     <!-- FOOTER SECTION DESIGN -->
     <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 by @ashish_khadka07 | All rights reserved</p>
+        <!-- WhatsApp -->
+        <div class="footer-whatsapp">
+            <a href="https://wa.me/9779861898097" target="_blank" title="Chat on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
         </div>
+
+        <!-- Copyright -->
+        <div class="footer-text">
+            <p>&copy; <span id="year"></span> by @ashish_khadka07 | All rights reserved</p>
+        </div>
+
+        <!-- Back to Top -->
         <div class="footer-iconTop">
             <a href="#scroll"><i class="fa-solid fa-angle-up"></i></a>
         </div>
     </footer>
+
 
     <!-- SCROLL REVEAL JS -->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -248,6 +259,23 @@
 
     <!-- MAIN JS -->
     <script src="JS/main.js"></script>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- <script>
+        const backToTop = document.querySelector('.footer-iconTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                backToTop.style.display = 'flex';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+    </script> -->
+
 </body>
 
 </html>

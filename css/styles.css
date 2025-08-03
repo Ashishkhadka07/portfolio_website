@@ -402,19 +402,28 @@ span {
 
 /* Footer section CSS starts from here */
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
   padding: 2rem 9%;
   background: var(--snd-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .footer-text {
   font-size: 1.6rem;
+  text-align: center;
 }
 
 .footer-iconTop {
+  position: fixed;
+  display: none;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -431,6 +440,33 @@ span {
 .footer-iconTop a i {
   font-size: 2.4rem;
   color: var(--snd-bg-color);
+}
+
+/* WhatsApp Button */
+.footer-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.footer-whatsapp a {
+  background-color: #25d366;
+  padding: 10px 14px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.footer-whatsapp a:hover {
+  box-shadow: 0 0 10px #25d366;
+}
+
+.footer-whatsapp a i {
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 /* Breakpoint responsive */
