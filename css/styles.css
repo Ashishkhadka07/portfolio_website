@@ -61,9 +61,26 @@ section {
 
 .social-medias a:hover,
 .social-media a:hover {
-  background: var(--main-color);
+  background: #fff;
   color: var(--snd-bg-color);
   box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* Sidebar original brand colors */
+.social-media a .fa-facebook {
+  color: #1877f2;
+}
+
+.social-media a .fa-linkedin {
+  color: #0a66c2;
+}
+
+.social-media a .fa-instagram {
+  color: #e4405f;
+}
+
+.social-media a .fa-github {
+  color: #171515;
 }
 
 /* Header CSS Part starts from here*/
@@ -461,7 +478,7 @@ span {
 }
 
 .footer-whatsapp a:hover {
-  box-shadow: 0 0 10px #25d366;
+  box-shadow: 0 0 10px #0a9b3f;
 }
 
 .footer-whatsapp a i {
