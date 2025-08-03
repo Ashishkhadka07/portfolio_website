@@ -88,7 +88,7 @@ section {
 }
 
 .navbar a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--text-color);
   margin-left: 4rem;
   font-weight: 700;
@@ -131,6 +131,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 4rem;
 }
 
 .home-content h3 {
@@ -172,6 +173,7 @@ span {
 
 .home-content p {
   font-size: 1.6rem;
+  text-align: justify;
 }
 
 .btn {
@@ -224,6 +226,7 @@ span {
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+  text-align: justify;
 }
 
 .about-content ul li {
@@ -252,6 +255,7 @@ span {
   text-align: center;
   border: 0.2rem solid var(--bg-color);
   transition: 0.5s ease;
+  min-height: 400px;
 }
 
 .services-container .services-box:hover {
@@ -260,8 +264,9 @@ span {
 }
 
 .services-box i {
-  font-size: 7rem;
+  font-size: 6rem;
   color: var(--main-color);
+  margin-bottom: 5px;
 }
 
 .services-box h3 {
@@ -271,6 +276,8 @@ span {
 .services-box p {
   font-size: 1.6rem;
   margin: 1rem 0 3rem;
+  text-align: justify;
+  flex-grow: 1;
 }
 
 /* Portfolio section CSS starts from here */
